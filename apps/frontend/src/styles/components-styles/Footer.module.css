@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  padding: 24px 0;
+  background: #111111;
+  border-top: 1px solid #222222;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+}

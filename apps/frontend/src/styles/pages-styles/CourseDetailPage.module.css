@@ -1,0 +1,235 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.mainContent {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  width: 100%;
+}
+
+.backLink {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: color 0.2s;
+  padding: 0;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  color: #f1c40f;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Esquerda: Info */
+.courseInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.courseTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.metaInfo {
+  display: flex;
+  gap: 24px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.descriptionSection p {
+  line-height: 1.7;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.lessonsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lessonItem {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  gap: 20px;
+}
+
+.lessonItemActive {
+  cursor: pointer;
+  border-color: #333;
+}
+
+.lessonItemActive:hover {
+  background: #161616;
+  border-color: #f1c40f44;
+  transform: translateX(4px);
+}
+
+.lessonOrder {
+  font-family: 'Space Mono', monospace;
+  color: #444;
+  font-weight: 600;
+}
+
+.lessonTitle {
+  flex: 1;
+  font-weight: 500;
+  color: #eee;
+}
+
+.lessonPlay {
+  color: #f1c40f;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* Direita: CTA Card */
+.ctaCard {
+  position: sticky;
+  top: 100px;
+}
+
+.ctaCardInner {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.ctaHeader {
+  margin-bottom: 32px;
+}
+
+.priceTag {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1c40f;
+  display: block;
+}
+
+.ctaSub {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 18px;
+  background: #f1c40f;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 24px;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  background: #d4ac0d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(241, 196, 15, 0.2);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.beneficios li {
+  font-size: 0.9rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* States */
+.stateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 20px;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(241, 196, 15, 0.1);
+  border-top-color: #f1c40f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .courseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    position: static;
+    order: -1;
+  }
+
+  .courseTitle {
+    font-size: 2.5rem;
+  }
+}

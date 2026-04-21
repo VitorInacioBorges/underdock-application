@@ -1,0 +1,165 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+/* ─── Welcome ─────────────────────────────────────────────── */
+.welcome {
+  padding: 60px 0 48px;
+}
+
+.welcomeInner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.greetingSub {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  max-width: 380px;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: transparent;
+  border: 1.5px solid var(--text);
+  border-radius: var(--radius);
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: background var(--transition), color var(--transition);
+}
+
+.btnPrimary:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.btnGhost {
+  background: transparent;
+  border: none;
+  padding: 8px 4px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.btnGhost:hover {
+  color: var(--text);
+}
+
+/* ─── Recent Courses ──────────────────────────────────────── */
+.recent {
+  flex: 1;
+  padding: 48px 0 32px;
+}
+
+.recentInner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.sectionTitle {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.sectionSub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.courseList {
+  border-top: 1px solid var(--border);
+}
+
+/* ─── State messages ──────────────────────────────────────── */
+.stateMsg {
+  padding: 24px 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.errorMsg {
+  padding: 12px 16px;
+  margin-top: 16px;
+  color: var(--error);
+  background: hsla(0, 72%, 50%, 0.08);
+  border: 1px solid hsla(0, 72%, 50%, 0.2);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+}
+
+/* ─── Footer ──────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 16px 0;
+}
+
+.footerInner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.footerLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.footerLinks a {
+  color: var(--text-dim);
+  transition: color var(--transition);
+}
+
+.footerLinks a:hover {
+  color: var(--text-muted);
+}
+
+/* ─── Dev logout button ──────────────────────────────────── */
+.logoutBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  transition: color var(--transition), border-color var(--transition);
+  z-index: 200;
+}
+
+.logoutBtn:hover {
+  color: var(--error);
+  border-color: var(--error);
+}

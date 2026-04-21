@@ -1,0 +1,173 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  color: #fff;
+}
+
+.mainContent {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  width: 100%;
+}
+
+.heroText {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 64px;
+  max-width: 1000px;
+  letter-spacing: -0.02em;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.coursesList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Course Card Styles */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #444;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerIcon {
+  color: #f1c40f;
+  font-size: 1.2rem;
+}
+
+.cardTitle {
+  font-weight: 500;
+  color: #f1c40f;
+  font-size: 1.1rem;
+}
+
+.cardDescription {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.cardDate {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.cardTags {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  background: #2a2a2a;
+  padding: 6px 14px;
+  border-radius: 16px;
+}
+
+.tagDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f1c40f;
+}
+
+/* Status States */
+.stateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 24px;
+  text-align: center;
+  color: #777;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(241, 196, 15, 0.1);
+  border-top-color: #f1c40f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 24px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.retryBtn {
+  background: transparent;
+  border: 1px solid #333;
+  color: #f1c40f;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.retryBtn:hover {
+  background: #f1c40f;
+  color: #000;
+  border-color: #f1c40f;
+}
+
+.emptyTitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.detailsLink {
+  color: #f1c40f;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: auto;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+

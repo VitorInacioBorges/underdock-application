@@ -1,0 +1,99 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+
+  /* Fundo tecnológico: gradiente teal-to-Navy com linhas de ruído */
+  background:
+    linear-gradient(135deg,
+      hsl(185, 70%, 15%) 0%,
+      hsl(200, 60%, 10%) 40%,
+      hsl(220, 50%, 8%) 100%
+    );
+}
+
+/* Camada de linhas de circuito/ruído (SVG data URI) */
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      hsla(185, 70%, 50%, 0.04) 40px,
+      hsla(185, 70%, 50%, 0.04) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      hsla(185, 70%, 50%, 0.04) 60px,
+      hsla(185, 70%, 50%, 0.04) 61px
+    );
+  pointer-events: none;
+}
+
+/* Curvas de luz (imitam as linhas coloridas da imagem de referência) */
+.banner::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background:
+    radial-gradient(ellipse 60% 40% at 30% 80%, hsla(185, 80%, 50%, 0.18), transparent),
+    radial-gradient(ellipse 50% 30% at 70% 70%, hsla(10, 80%, 55%, 0.15), transparent);
+  pointer-events: none;
+}
+
+.overlay {
+  display: none; /* reservado para futuro overlay de imagem */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: var(--max-w);
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.courseTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 20px;
+  background: transparent;
+  border: 1.5px solid var(--text);
+  border-radius: 20px;
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  width: fit-content;
+}
+
+.btn:hover {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
