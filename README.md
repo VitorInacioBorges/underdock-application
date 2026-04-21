@@ -1,12 +1,12 @@
-# Auto Improvement Application
+# Course Manager Dashboard
 
-Plataforma de aprendizado e autoaperfeiçoamento desenvolvida para **FEA.dev** por Vitor Inacio Borges — liga estudantil focada em tecnologia e engenharia de software.
+Plataforma de aprendizado, autoaperfeiçoamento, manutenção e criação de cursos por Vitor Inacio Borges.
 
 ---
 
 ## Propósito
 
-Oferecer um ambiente completo de cursos, aulas, exercícios e acompanhamento de progresso para estudantes, com painel administrativo para gerenciamento de conteúdo.
+Oferecer um ambiente completo de cursos, aulas, exercícios e acompanhamento de progresso para estudantes, com painel administrativo para gerenciamento de conteúdo. Também serve como base para aprendizado das tecnologias utilizadas no projeto e como projeto de portfólio. O projeto também pode ser hospedado em uma VPS managed ou unmanaged para uso pessoal. 
 
 ## Objetivos
 
@@ -50,7 +50,3 @@ auto-improvement-application/
 ├── EXECUTION.md
 └── README.md             # Este arquivo
 ```
-
-## Licença
-
-**UNLICENSED** — Projeto privado da FEA.dev.
