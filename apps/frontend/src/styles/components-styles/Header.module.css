@@ -1,8 +1,8 @@
 .header {
   width: 100%;
   padding: 16px 0;
-  background: #111111;
-  border-bottom: 1px solid #222222;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -30,7 +30,7 @@
 }
 
 .logoText {
-  color: #ffffff;
+  color: var(--text);
   font-weight: 500;
   font-size: 1rem;
   font-family: inherit;
@@ -43,14 +43,14 @@
 }
 
 .navLink {
-  color: #a0a0a0;
+  color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
+  font-size: 1.1rem;
+  transition: color var(--transition);
 }
 
 .navLink:hover {
-  color: #ffffff;
+  color: var(--text);
 }
 
 .loginBtn {
@@ -58,38 +58,38 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: #a0a0a0;
-  border: 1px solid #f1c40f;
+  color: var(--text-muted);
+  border: 1px solid var(--accent);
   border-radius: 4px;
   padding: 6px 16px;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all var(--transition);
   text-decoration: none;
 }
 
 .loginBtn:hover {
-  background: rgba(241, 196, 15, 0.1);
-  color: #ffffff;
+  background: var(--accent-subtle);
+  color: var(--accent);
 }
 
 .accountBtn {
   width: 40px;
   height: 40px;
-  border: 1px solid #f1c40f;
+  border: 1px solid var(--accent);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #f1c40f;
+  color: var(--accent);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all var(--transition);
   background: transparent;
 }
 
 .accountBtn:hover {
-  background: rgba(241, 196, 15, 0.1);
-  color: #ffffff;
+  background: var(--accent-subtle);
+  color: var(--text);
   transform: translateY(-1px);
 }
 
@@ -97,4 +97,35 @@
   width: 24px;
   height: 24px;
   display: block;
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 990px) {
+  .inner {
+    padding: 0 20px;
+  }
+
+  .logoImg {
+    height: 38px;
+  }
+
+  .nav {
+    gap: 18px;
+  }
+
+  .navLink {
+    font-size: 0.85rem;
+  }
+
+  .loginBtn {
+    padding: 5px 12px;
+    font-size: 0.82rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .inner {
+    padding: 0 16px;
+  }
 }

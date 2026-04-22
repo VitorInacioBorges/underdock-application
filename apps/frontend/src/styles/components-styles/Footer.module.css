@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
   padding: 24px 0;
-  background: #111111;
-  border-top: 1px solid #222222;
-  color: #a0a0a0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
   font-size: 0.9rem;
   margin-top: auto;
 }
@@ -23,11 +23,27 @@
 }
 
 .link {
-  color: #a0a0a0;
+  color: var(--text-muted);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color var(--transition);
 }
 
 .link:hover {
-  color: #ffffff;
+  color: var(--text);
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 990px) {
+  .inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
 }
