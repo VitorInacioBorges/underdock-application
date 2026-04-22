@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.copy}>
-          ©2026 FE.dev • v0.1 •
+          ©2026 Vitor Inacio • v0.1 •
         </div>
         <div className={styles.links}>
           <a href="/docs" className={styles.link}>Docs / Glossário</a>

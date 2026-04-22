@@ -46,10 +46,10 @@ export default function CoursesPage() {
   return (
     <div className={styles.page}>
       <Header />
-      
+
       <main className={styles.mainContent}>
         <h1 className={styles.heroText}>
-          Aproximando economia e tecnologia da comunidade através de educação que cria oportunidades e impacto duradouro.
+          Disseminando conhecimento para todos os cantos do Brasil. Cursos prontos para todos e acessível a todos.
         </h1>
 
         <h2 className={styles.sectionTitle}>Cursos Disponíveis</h2>
@@ -72,9 +72,9 @@ export default function CoursesPage() {
         ) : (
           <div className={styles.coursesList}>
             {courses.map(course => (
-              <article 
-                key={course.id} 
-                className={styles.card} 
+              <article
+                key={course.id}
+                className={styles.card}
                 onClick={() => navigate(`/courses/${course.id}`)}
                 style={{ cursor: 'pointer' }}
               >
@@ -82,7 +82,7 @@ export default function CoursesPage() {
                   <span className={styles.headerIcon}>☰</span>
                   <span className={styles.cardTitle}>{course.title}</span>
                 </div>
-                
+
                 <div className={styles.cardBody}>
                   <p className={styles.cardDescription}>
                     {course.description}

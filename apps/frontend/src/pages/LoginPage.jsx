@@ -49,8 +49,8 @@ export default function LoginPage() {
   return (
     <div className={styles.page}>
       <div className={styles.logoArea}>
-        <span className={styles.logoImg} aria-label="FEA.dev">
-          <img src="/icons/fea.dev-logo.png" alt="FEA.dev" />
+        <span className={styles.logoImg} aria-label="CourseManager">
+          <img src="/icons/logo.png" alt="CourseManager" />
         </span>
       </div>
 
@@ -116,7 +116,7 @@ export default function LoginPage() {
       </div>
 
       <footer className={styles.footer}>
-        ©2025 FE.dev • v0.1
+        ©2025 Vitor Inacio • v0.1
       </footer>
     </div>
   );

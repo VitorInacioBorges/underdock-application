@@ -9,7 +9,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link to="/" className={styles.logoArea}>
-          <img src="/icons/fea.dev-logo.png" alt="FEA.dev" className={styles.logoImg} />
+          <img src="/icons/logo.png" alt="CourseManager" className={styles.logoImg} />
           <span className={styles.logoText}></span>
         </Link>
 
