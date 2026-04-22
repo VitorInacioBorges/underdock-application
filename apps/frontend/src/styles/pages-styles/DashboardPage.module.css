@@ -163,3 +163,47 @@
   color: var(--error);
   border-color: var(--error);
 }
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 990px) {
+  .welcomeInner,
+  .recentInner {
+    padding: 0 20px;
+  }
+
+  .welcome {
+    padding: 36px 0 28px;
+  }
+
+  .recent {
+    padding: 28px 0 20px;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .footerLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .logoutBtn {
+    bottom: 12px;
+    right: 12px;
+    padding: 5px 12px;
+    font-size: 0.72rem;
+  }
+}

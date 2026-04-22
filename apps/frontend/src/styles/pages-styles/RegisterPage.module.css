@@ -19,7 +19,7 @@
 .logoImg {
   height: 60px;
   width: auto;
-  filter: drop-shadow(0 0 12px hsla(38, 88%, 55%, 0.6));
+  filter: drop-shadow(0 0 12px hsla(284, 87%, 62%, 0.6));
 }
 
 /* ─── Card ────────────────────────────────────────────────── */
@@ -131,7 +131,7 @@
 }
 
 .submitBtn:hover:not(:disabled) {
-  background: hsl(38, 97%, 44%);
+  background: hsl(297, 100%, 35%);
   transform: translateY(-1px);
 }
 
@@ -161,4 +161,25 @@
 .footer {
   font-size: 0.75rem;
   color: var(--text-dim);
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 990px) {
+  .page {
+    padding: 32px 16px;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 28px 20px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .logoImg {
+    height: 48px;
+  }
 }

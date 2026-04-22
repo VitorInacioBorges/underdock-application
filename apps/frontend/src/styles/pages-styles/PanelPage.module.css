@@ -2,8 +2,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #111111;
-  color: #ffffff;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .container {
@@ -26,30 +26,30 @@
 .tabBtn {
   background: transparent;
   border: none;
-  color: #a0a0a0;
+  color: var(--text-muted);
   padding: 12px 16px;
   text-align: left;
-  border-radius: 8px;
+  border-radius: var(--radius);
   cursor: pointer;
   font-size: 1rem;
-  transition: all 0.2s ease;
+  transition: all var(--transition);
 }
 
 .tabBtn:hover {
-  background: #1a1a1a;
-  color: #ffffff;
+  background: var(--surface);
+  color: var(--text);
 }
 
 .activeTab {
-  background: #2a2a2a;
-  color: #f1c40f;
+  background: var(--surface-2);
+  color: var(--accent);
   font-weight: 500;
 }
 
 .adminGroup {
   margin-top: 24px;
   padding-top: 24px;
-  border-top: 1px solid #222222;
+  border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -58,7 +58,7 @@
 .adminTitle {
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #666;
+  color: var(--text-dim);
   letter-spacing: 0.05em;
   padding-left: 16px;
   margin-bottom: 8px;
@@ -66,16 +66,16 @@
 
 .content {
   flex: 1;
-  background: #1a1a1a;
-  border-radius: 12px;
-  border: 1px solid #333333;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
   padding: 32px;
 }
 
 .contentTitle {
   font-size: 1.8rem;
   margin-bottom: 32px;
-  color: #ffffff;
+  color: var(--text);
 }
 
 /* Forms */
@@ -94,33 +94,35 @@
 
 .label {
   font-size: 0.9rem;
-  color: #a0a0a0;
+  color: var(--text-muted);
 }
 
 .input {
-  background: #111111;
-  border: 1px solid #333333;
+  background: var(--bg);
+  border: 1px solid var(--border);
   padding: 12px 16px;
-  border-radius: 6px;
-  color: #ffffff;
+  border-radius: var(--radius);
+  color: var(--text);
   font-size: 1rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
 }
 
 .input:focus {
-  outline: none;
-  border-color: #f1c40f;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-subtle);
 }
 
 .submitBtn {
-  background: #f1c40f;
-  color: #111111;
+  background: var(--accent);
+  color: var(--text);
   border: none;
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-weight: 600;
   cursor: pointer;
   margin-top: 8px;
-  transition: opacity 0.2s;
+  transition: opacity var(--transition);
 }
 
 .submitBtn:hover {
@@ -129,36 +131,36 @@
 
 .dangerBtn {
   background: transparent;
-  color: #ff4757;
-  border: 1px solid #ff4757;
+  color: var(--error);
+  border: 1px solid var(--error);
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-weight: 600;
   cursor: pointer;
   margin-top: 24px;
-  transition: all 0.2s;
+  transition: all var(--transition);
 }
 
 .dangerBtn:hover {
-  background: rgba(255, 71, 87, 0.1);
+  background: hsla(0, 72%, 70%, 0.1);
 }
 
 .message {
   padding: 12px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-size: 0.9rem;
 }
 
 .success {
-  background: rgba(46, 213, 115, 0.1);
-  color: #2ed573;
-  border: 1px solid #2ed573;
+  background: hsla(142, 69%, 58%, 0.1);
+  color: var(--success);
+  border: 1px solid hsla(142, 69%, 58%, 0.3);
 }
 
 .error {
-  background: rgba(255, 71, 87, 0.1);
-  color: #ff4757;
-  border: 1px solid #ff4757;
+  background: hsla(0, 72%, 50%, 0.1);
+  color: var(--error);
+  border: 1px solid hsla(0, 72%, 50%, 0.25);
 }
 
 /* Lists */
@@ -173,9 +175,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background: #111111;
-  border: 1px solid #333333;
-  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .itemInfo {
@@ -190,7 +192,7 @@
 
 .itemSub {
   font-size: 0.85rem;
-  color: #a0a0a0;
+  color: var(--text-muted);
 }
 
 .itemActions {
@@ -200,15 +202,78 @@
 
 .actionBtn {
   background: transparent;
-  border: 1px solid #333;
-  color: #ffffff;
+  border: 1px solid var(--border);
+  color: var(--text);
   padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.85rem;
+  transition: border-color var(--transition), color var(--transition);
 }
 
 .actionBtn:hover {
-  border-color: #f1c40f;
-  color: #f1c40f;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 990px) {
+  .container {
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tabBtn {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    font-size: 0.88rem;
+    padding: 10px 10px;
+  }
+
+  .adminGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    border-left: 1px solid var(--border);
+    padding-left: 12px;
+  }
+
+  .adminTitle {
+    display: none;
+  }
+
+  .content {
+    padding: 20px 16px;
+  }
+
+  .contentTitle {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .listItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .itemActions {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
