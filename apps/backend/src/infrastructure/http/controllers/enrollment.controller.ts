@@ -57,7 +57,6 @@ export class EnrollmentController {
     return await this.createEnrollmentUseCase.execute(dto);
   }
 
-
   // GET /enrollments/:id
   @Get(':id')
   async findById(@Param('id') id: string) {
