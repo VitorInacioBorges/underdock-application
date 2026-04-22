@@ -4,20 +4,21 @@
 /* ─── CSS Custom Properties (Design Tokens) ────────────────── */
 :root {
   /* Backgrounds */
-  --bg: #0d0d0d;
-  --surface: #1a1a1a;
-  --surface-2: #222222;
-  --border: #2a2a2a;
+  --bg: #09001c;
+  --surface: #080011;
+  --surface-2: #0c0014;
+  --border: #05000b;
 
   /* Accent — amber/gold matching the UI images */
-  --accent: #FFD000;
-  --accent-dim: hsl(39, 100%, 50%);
-  --accent-subtle: hsla(38, 88%, 55%, 0.12);
+  --accent: #8300aa;
+  --accent-dim: hsl(286, 100%, 31%);
+  --accent-subtle: hsla(294, 88%, 55%, 0.12);
 
   /* Text */
-  --text: #f0f0f0;
+  --text: #ffedff;
   --text-muted: #888888;
   --text-dim: #555555;
+  --text-box: #ef71f6;
 
   /* Status */
   --success: #4ade80;
@@ -109,4 +110,15 @@ img {
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 3px;
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 990px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
 }
