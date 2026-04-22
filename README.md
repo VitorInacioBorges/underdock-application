@@ -2,8 +2,6 @@
 
 Plataforma de aprendizado, autoaperfeiçoamento, manutenção e criação de cursos por Vitor Inacio Borges.
 
----
-
 ## Propósito
 
 Oferecer um ambiente completo de cursos, aulas, exercícios e acompanhamento de progresso para estudantes, com painel administrativo para gerenciamento de conteúdo. Também serve como base para aprendizado das tecnologias utilizadas no projeto e como projeto de portfólio. O projeto também pode ser hospedado em uma VPS managed ou unmanaged para uso pessoal. 
