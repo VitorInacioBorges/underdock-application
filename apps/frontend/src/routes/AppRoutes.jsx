@@ -7,6 +7,7 @@ import LoginPage from '../pages/LoginPage';
 import CourseDetailPage from '../pages/CourseDetailPage';
 import LessonViewerPage from '../pages/LessonViewerPage';
 import ExerciseNotebookViewerPage from '../pages/ExerciseNotebookViewerPage';
+import AboutPage from '../pages/AboutPage';
 import { useAuth } from '../contexts/AuthContext';
 
 function PrivateRoute({ children }) {
@@ -24,6 +25,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/about" element={<AboutPage />} />
       <Route path="/courses" element={<CoursesPage />} />
       <Route path="/courses/:id" element={<CourseDetailPage />} />
       <Route
