@@ -49,8 +49,8 @@ export default function LoginPage() {
   return (
     <div className={styles.page}>
       <div className={styles.logoArea}>
-        <span className={styles.logoImg} aria-label="CourseManager">
-          <img src="/icons/logo.png" alt="CourseManager" />
+        <span className={styles.logoImg} aria-label="UnderDock">
+          <img src="/icons/logo.svg" alt="UnderDock" />
         </span>
       </div>
 

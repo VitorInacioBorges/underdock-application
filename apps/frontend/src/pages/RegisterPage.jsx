@@ -71,8 +71,8 @@ export default function RegisterPage() {
     <div className={styles.page}>
       {/* ─── Logo ─────────────────────────────────────── */}
       <div className={styles.logoArea}>
-        <span className={styles.logoImg} aria-label="CourseManager">
-          <img src="/icons/logo.png" alt="CourseManager" />
+        <span className={styles.logoImg} aria-label="UnderDock">
+          <img src="/icons/logo.svg" alt="UnderDock" />
         </span>
       </div>
 

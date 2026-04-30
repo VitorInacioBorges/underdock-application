@@ -104,7 +104,7 @@ export default function AboutPage() {
         <section className={`${styles.section} ${styles.reversed}`}>
           <div className={styles.imageWrap}>
             <img
-              src="/images/about-page/me.jpeg"
+              src="/images/about-page/me.png"
               alt="Vitor Inacio Borges"
               className={styles.image}
             />
