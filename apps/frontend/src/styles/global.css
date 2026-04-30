@@ -4,9 +4,9 @@
 /* ─── CSS Custom Properties (Design Tokens) ────────────────── */
 :root {
   /* Backgrounds */
-  --bg: #09001c;
-  --surface: #080011;
-  --surface-2: #0c0014;
+  --bg: #140028;
+  --surface: #0c0017;
+  --surface-2: #150022;
   --border: #05000b;
 
   /* Accent — amber/gold matching the UI images */

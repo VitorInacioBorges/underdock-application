@@ -25,7 +25,7 @@
 }
 
 .logoImg {
-  height: 50px;
+  height: 70px;
   width: auto;
 }
 
@@ -74,8 +74,8 @@
 }
 
 .accountBtn {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 1px solid var(--accent);
   border-radius: 50%;
   display: inline-flex;
@@ -94,8 +94,8 @@
 }
 
 .accountIcon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: block;
 }
 
@@ -120,6 +120,22 @@
   .loginBtn {
     padding: 5px 12px;
     font-size: 0.82rem;
+  }
+
+  .accountBtn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .accountBtn:hover {
+    background: var(--accent-subtle);
+    color: var(--text);
+    transform: translateY(-1px);
+  }
+
+  .accountIcon {
+    width: 20px;
+    height: 20px;
   }
 }
 

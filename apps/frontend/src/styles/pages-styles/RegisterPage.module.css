@@ -17,9 +17,9 @@
 }
 
 .logoImg {
-  height: 60px;
-  width: auto;
-  filter: drop-shadow(0 0 12px hsla(284, 87%, 62%, 0.6));
+  height: 70px;
+  width: 70px;
+  /* filter: drop-shadow(0 0 12px hsla(284, 87%, 62%, 0.6)); */
 }
 
 /* ─── Card ────────────────────────────────────────────────── */
@@ -27,7 +27,7 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 36px 32px;
+  padding: 46px 32px;
   width: 100%;
   max-width: 420px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
@@ -180,6 +180,7 @@
   }
 
   .logoImg {
-    height: 48px;
+    height: 60px;
+    width: 60px;
   }
 }
