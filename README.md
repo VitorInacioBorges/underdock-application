@@ -1,4 +1,4 @@
-# 🇧🇷​ / 🇵🇹​ Projeto UnderDock
+# Projeto UnderDock 🇧🇷 / 🇵🇹
 
 [Português](#course-manager-dashboard) 🇧🇷​ / 🇵🇹​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
 
@@ -49,7 +49,7 @@ course-manager-dashboard/
 
 ---
 
-# 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​ UnderDock Project (English)
+# UnderDock Project (English) 🇺🇸 / 🇬🇧 / 🇨🇦 / 🇦🇺
 
 [Português](#course-manager-dashboard) 🇧🇷​ / 🇵🇹​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
 
