@@ -1,6 +1,6 @@
-# 🇧🇷​ Projeto UnderDock
+# 🇧🇷​ / 🇵🇹​ Projeto UnderDock
 
-[Português](#course-manager-dashboard) 🇧🇷​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
+[Português](#course-manager-dashboard) 🇧🇷​ / 🇵🇹​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
 
 Plataforma de aprendizado, autoaperfeiçoamento, manutenção e criação de cursos por Vitor Inacio Borges.
 
@@ -51,7 +51,7 @@ course-manager-dashboard/
 
 # 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​ UnderDock Project (English)
 
-[Português](#course-manager-dashboard) 🇧🇷​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
+[Português](#course-manager-dashboard) 🇧🇷​ / 🇵🇹​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
 
 Learning, self-improvement, maintenance, and course creation platform by Vitor Inacio Borges.
 
