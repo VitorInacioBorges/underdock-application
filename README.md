@@ -1,4 +1,4 @@
-# Projeto UnderDock 🇧🇷 / 🇵🇹
+# 📖​ UnderDock
 
 [Português](#course-manager-dashboard) 🇧🇷​ / 🇵🇹​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
 
@@ -6,7 +6,7 @@ Plataforma de aprendizado, autoaperfeiçoamento, manutenção e criação de cur
 
 ## Propósito
 
-Oferecer um ambiente completo de cursos, aulas, exercícios e acompanhamento de progresso para estudantes, com painel administrativo para gerenciamento de conteúdo. Também serve como base para aprendizado das tecnologias utilizadas no projeto e como projeto de portfólio. O projeto também pode ser hospedado em uma VPS managed ou unmanaged para uso pessoal. 
+Oferecer um ambiente completo de cursos, aulas, exercícios e acompanhamento de progresso para estudantes, com painel administrativo para gerenciamento de conteúdo. Também serve como base para aprendizado das tecnologias utilizadas no projeto e como projeto de portfólio. O projeto também pode ser hospedado em uma VPS managed ou unmanaged para uso pessoal.
 
 ## Objetivos
 
@@ -24,8 +24,8 @@ Oferecer um ambiente completo de cursos, aulas, exercícios e acompanhamento de 
 
 ## Documentação Técnica
 
-| Documento                                | Descrição                                                 |
-| ---------------------------------------- | --------------------------------------------------------- |
+| Documento                                                         | Descrição                                                 |
+| ----------------------------------------------------------------- | --------------------------------------------------------- |
 | [ARCHITECTURE.md](./documentation/portuguese/ARCHITECTURE.md)     | Fundação arquitetural, justificativas e fluxo de dados    |
 | [DIRECTORIES.md](./documentation/portuguese/DIRECTORIES.md)       | Mapeamento completo de diretórios e responsabilidades     |
 | [TECHNOLOGIES.md](./documentation/portuguese/TECHNOLOGIES.md)     | Stack, metodologias e gerenciamento de estado             |
@@ -49,7 +49,7 @@ course-manager-dashboard/
 
 ---
 
-# UnderDock Project (English) 🇺🇸 / 🇬🇧 / 🇨🇦 / 🇦🇺
+# 📖​ UnderDock
 
 [Português](#course-manager-dashboard) 🇧🇷​ / 🇵🇹​ | [English](#course-manager-dashboard-english) 🇺🇸​ / 🇬🇧​ / 🇨🇦​ / 🇦🇺​
 
@@ -68,21 +68,21 @@ To offer a complete environment of courses, classes, exercises, and progress tra
 
 ## Services
 
-| Service          | Description                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Service          | Description                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **Backend API**  | REST API built in **NestJS** with **Clean Architecture**, persistence via **TypeORM**, and **PostgreSQL** database. |
-| **Frontend SPA** | User interface in **React 19** with **Vite 8**, protected routing, and CSS Modules.                               |
+| **Frontend SPA** | User interface in **React 19** with **Vite 8**, protected routing, and CSS Modules.                                 |
 
 ## Technical Documentation
 
-| Document                                 | Description                                                 |
-| ---------------------------------------- | ----------------------------------------------------------- |
-| [ARCHITECTURE.md](./documentation/english/ARCHITECTURE.md)     | Architectural foundation, justifications, and data flow    |
-| [DIRECTORIES.md](./documentation/english/DIRECTORIES.md)       | Complete mapping of directories and responsibilities       |
-| [TECHNOLOGIES.md](./documentation/english/TECHNOLOGIES.md)     | Stack, methodologies, and state management                 |
-| [CONVENTIONS.md](./documentation/english/CONVENTIONS.md)       | Naming patterns, organization, and design patterns         |
-| [BEST-PRACTICES.md](./documentation/english/BEST-PRACTICES.md) | SOLID principles, error handling, testing, and security    |
-| [PREREQUISITES.md](./documentation/english/PREREQUISITES.md)   | System dependencies, tools, and hardware                   |
+| Document                                                       | Description                                                    |
+| -------------------------------------------------------------- | -------------------------------------------------------------- |
+| [ARCHITECTURE.md](./documentation/english/ARCHITECTURE.md)     | Architectural foundation, justifications, and data flow        |
+| [DIRECTORIES.md](./documentation/english/DIRECTORIES.md)       | Complete mapping of directories and responsibilities           |
+| [TECHNOLOGIES.md](./documentation/english/TECHNOLOGIES.md)     | Stack, methodologies, and state management                     |
+| [CONVENTIONS.md](./documentation/english/CONVENTIONS.md)       | Naming patterns, organization, and design patterns             |
+| [BEST-PRACTICES.md](./documentation/english/BEST-PRACTICES.md) | SOLID principles, error handling, testing, and security        |
+| [PREREQUISITES.md](./documentation/english/PREREQUISITES.md)   | System dependencies, tools, and hardware                       |
 | [EXECUTION.md](./documentation/english/EXECUTION.md)           | Local setup, environment variables, migrations, and deployment |
 
 ## General Structure
